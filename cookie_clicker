@@ -5,7 +5,7 @@ import React, { useState } from 'react';
    const [cookies, setCookies] = useState(0);
  
    const handleClick = () => {
-     setCookies(cookies + 1); // Incrementa a contagem de cookies
+     setCookies(cookies + 1); 
    };
  
    return (
