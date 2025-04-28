@@ -8,7 +8,7 @@ export default function App() {
   const [clickPower, setClickPower] = useState(1);
   const [autoClickers, setAutoClickers] = useState(0);
 
-  // Carrega os dados salvos ao iniciar o app
+
   useEffect(() => {
     const loadData = async () => {
       const savedCookies = await AsyncStorage.getItem('cookies');
@@ -22,7 +22,7 @@ export default function App() {
     loadData();
   }, []);
 
-  // Salva os dados sempre que algo mudar
+
   useEffect(() => {
     AsyncStorage.setItem('cookies', cookies.toString());
     AsyncStorage.setItem('clickPower', clickPower.toString());
